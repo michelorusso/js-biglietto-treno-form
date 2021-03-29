@@ -6,6 +6,9 @@
 var buttonGenerate = document.getElementById('generate');
 buttonGenerate.addEventListener('click', function() {
 
+    // Il button Generate farà apparire la finestra 'Il tuo biglietto'
+    document.getElementById('ticket-result').style.display='block';
+
     // Nome Passeggero
     // 
     // inputUsername -> salviamo la value che l'utente inserirà come nome passeggiero
@@ -51,13 +54,26 @@ buttonGenerate.addEventListener('click', function() {
 
     // STAMPA
     // Nome del passeggiero
-    document.getElementById('username-result').innerHTML = '<br>' + inputUsername;
+    document.getElementById('username-result').innerHTML = inputUsername;
     // Offerta
-    document.getElementById('offer-result').innerHTML = '<br>' + offer;
+    document.getElementById('offer-result').innerHTML = offer;
     // Prezzo totale del biglietto
-    document.getElementById('ticket-price-result').innerHTML = '<br>' + pricesTicketTotal;
+    document.getElementById('ticket-price-result').innerHTML = pricesTicketTotal.toFixed(2) + '€';
     // Carrozza
-    document.getElementById('carriage-result').innerHTML = '<br>' + carriageRandom;
+    document.getElementById('carriage-result').innerHTML = carriageRandom;
     // Codice CP
-    document.getElementById('code-result').innerHTML = '<br>' + codeCpRandom;
+    document.getElementById('code-result').innerHTML = codeCpRandom;
+});
+
+// Button Cancel
+var buttonCancel = document.getElementById('cancel');
+buttonCancel.addEventListener('click', function() {
+    // Il button Cancel farà sparire la finestra 'Il tuo biglietto' e la resetterà
+    document.getElementById('ticket-result').style.display='none';
+
+    // RESET
+    document.getElementById('username-input').value = '';
+    document.getElementById('km-input').value = '';
+    document.getElementById('age-input').value = 'maggiorenne';
+
 });

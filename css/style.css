@@ -25,6 +25,7 @@ body {
 .first {
     border-radius: 10px;
     margin-top: 25px;
+    box-shadow: 0 0 10px #3a3a3a;
 }
 
 h2 {
@@ -77,6 +78,10 @@ h2 {
 }
 
 /* Ticket-Result */
+#ticket-result {
+    display: none;
+}
+
 .second {
     padding: 20px;
    
@@ -95,7 +100,6 @@ h2 {
 }
 
 .ticket-result-row {
-    font-weight: 600;
     padding: 20px 0;
 }
 
@@ -107,6 +111,25 @@ h3 {
     padding-bottom: 5px;   
 }
 
-.result .span {
-    padding: 15px 0;
+h4 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    font-size: 18x;
+    padding-bottom: 30px;
+}
+
+
+.ticket-result-row span {
+    font-weight: 400;
+}
+
+.ticket-result-row:first-child span {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.ticket-result-row:first-child h4 {
+    padding-bottom: 5px;
 }
