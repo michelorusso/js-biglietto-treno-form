@@ -20,12 +20,8 @@ body {
     background-color: white;
     width: 1024px;
     margin: auto;
-
-
-    /* test */
-    height: 50px;
 }
-
+/* Ticket-Generation-Input */
 .first {
     border-radius: 10px;
     margin-top: 25px;
@@ -36,4 +32,76 @@ h2 {
     color: white;
     text-align: center;
     padding-top: 25px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 100px;
+}
+
+.button {
+    padding: 20px 0;
+}
+
+.ticket-generation-input {
+    text-align: center;
+}
+
+.input .ticket-generation-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.input .ticket-generation-row label {
+    color: #b91450;
+    padding: 15px 0;
+    font-weight: 500;
+}
+
+.input .ticket-generation-row input,
+.input .ticket-generation-row select {
+    border: 1px solid #b91450;
+    border-radius: 5px;
+    padding: 5px; 
+    text-align: center;
+}
+
+.ticket-generation-row button {
+    padding: 5px 10px;
+    color: #b91450;
+    font-weight: 700;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+/* Ticket-Result */
+.second {
+    padding: 20px;
+   
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.result .ticket-result-row:first-child {
+    background-color: gray;
+    padding: 10px 50px;
+    text-transform: uppercase;
+}
+
+.ticket-result-row {
+    font-weight: 600;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;   
 }

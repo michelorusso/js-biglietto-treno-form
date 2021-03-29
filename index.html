@@ -15,19 +15,91 @@
 <body>
 
     <div class="wrapper">
-        
-        <h2>Calcola il prezzo del tuo biglietto</h2>
 
+        <!-- Ticket-Generation-Input -->
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+    
         <div class="box first">
             
-        </div>
-        
+            
+            <div class="ticket-generation-input">
 
+                <div class="input">
+
+                    <div class="ticket-generation-row">
+
+                        <label for="username-input">Nome E Cognome</label>
+    
+                        <input id="username-input" type="text">
+    
+                    </div>
+    
+                    <div class="ticket-generation-row">
+    
+                        <label for="km-input">Km da percorrere</label>
+    
+                        <input id="km-input" type="number">
+    
+                    </div>
+    
+                    <div class="ticket-generation-row">
+    
+                        <label for="age-input">Fascia d'età</label>
+    
+                        <select id="age-input">
+    
+                            <option value="maggiorenne">Maggiorenne</option>
+    
+                            <option value="minorenne">Minorenne</option>
+    
+                            <option value="over">Over 65</option>
+                        </select>
+    
+                    </div>
+
+                </div>
+                
+                <div class="button">
+
+                    <div class="ticket-generation-row">
+
+                        <button id="generate">Genera</button>
+    
+                        <button id="cancel">Annulla</button>
+    
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+        </div>
+        <!-- End Ticket-Generation-Input -->
+
+        <!-- Ticket-Result -->
         <h2>Il tuo biglietto</h2>
 
         <div class="box second">
             
+            <h3>Dettaglio Passeggieri</h3>
+
+            <div class="result">
+
+            <div class="ticket-result-row">Nome Passeggiero<span id="username-result"></span></div>
+
+            <div class="ticket-result-row">Offerta<span id="offer-result"></span></div>
+
+            <div class="ticket-result-row">Carrozza<span id="carriage-result"></span></div>
+
+            <div class="ticket-result-row">Codice CP<span id="code-result"></span></div>
+
+            <div class="ticket-result-row">Costo Biglietto<span id="ticket-price-result"></span></div>
+
+            </div>
+
         </div>
+        <!-- End Ticket-Result -->
 
     </div>
 
